@@ -16,7 +16,7 @@ class_names = ['Plane', 'Car', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'S
 for image in range(16):
     plt.subplot(4,4, image+1)
     plt.xticks([])
-    plt.xticks([])
+    plt.yticks([])
     plt.imshow(training_images[image], cmap=plt.cm.binary)
     plt.xlabel(class_names[training_labels[image][0]])
 

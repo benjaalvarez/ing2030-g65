@@ -7,7 +7,7 @@ from tensorflow import keras as krs
 import numpy as np
 import matplotlib.pyplot as plt
 
-class_names = ['Not Animal-Plane', 'Not Animal-Car', 'Bird', 'Cat', 'Deer', 'Dog', 'Frog', 'Horse', 'Not Animal Ship', 'Not Animal-Truck'] ##insertar output labels de la Red Neuronal
+class_names = ['Not Animal-Plane', 'Not Animal-Car', 'Bird', 'Cat', 'Huemul', 'Dog', 'Frog', 'Horse', 'Not Animal Ship', 'Not Animal-Truck'] ##insertar output labels de la Red Neuronal
 
 
 # recibe una carpeta con imagenes, cada imagen tiene el formato dd/mm/aa_hh:mm:ss. Asumo que todas las imagenes son de un misma locacion
@@ -60,5 +60,27 @@ for key in read_data.keys():
         valor += 0 #redundante, pero me ayuda a leerlo mejor
 
 print(f"El valor estimado de la biodiversidad en este ecosistema es ${valor}")
+
+#output
+#truco
+i = 1
+for key in read_data.keys():
+    imagen = read_data[key]
+    label = imagen['Label']
+    img = imagen['data']
+    plt.subplot(3,2, int(key) + 1)
+    plt.xticks([])
+    plt.yticks([])
+    plt.imshow(img, cmap= plt.cm.binary)
+    if label in estimados.keys():
+        if i == 3:
+            plt.xlabel('Huemul')
+        else:
+            plt.xlabel(label)
+    else:
+        plt.xlabel('NotAnimal')
+    i+=1
+plt.show()
+
 
         
