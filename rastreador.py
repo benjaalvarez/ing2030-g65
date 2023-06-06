@@ -13,7 +13,7 @@ class_names = ['Not Animal-Plane', 'Not Animal-Car', 'Bird', 'Cat', 'Huemul', 'D
 # recibe una carpeta con imagenes, cada imagen tiene el formato dd/mm/aa_hh:mm:ss. Asumo que todas las imagenes son de un misma locacion
 read_data = {} #diccionario vacio
 
-directory = r"C:\Users\javie\Desktop\Innova\Images"
+directory = r"C:\Users\javie\Desktop\Innova\ing2030-g65\Images"
 id_ = 0
 
 for file_name in os.listdir(directory):
