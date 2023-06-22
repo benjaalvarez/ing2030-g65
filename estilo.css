@@ -1,0 +1,115 @@
+#map {
+	height: 500px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#cuerpo {
+	background-color: #fefefe;
+}
+.titulos{
+	font-family: 'DM Sans', sans-serif;
+	color: #303030;
+	font-weight: 800;
+	font-size:xx-large;
+	text-align: center;
+}
+
+.texto{
+	font-family: 'DM Sans', sans-serif;
+	color: #303030;
+	font-weight: 400;
+	font-size:medium;
+	text-align: center;
+}
+ 
+.row {
+	display: flex;
+}
+  
+.column {
+	flex: 50%;
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+img{
+	object-fit: cover;  
+	width: 200 px;
+	height: 250px;
+}
+img {
+	opacity:0.4;
+	filter:alpha(opacity=40); 
+  }
+  img:hover {
+	opacity:1.0;
+	filter:alpha(opacity=100); 
+  }
+  .radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  font-family:  'DM Sans', sans-serif;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fefefe;
+  font-weight: 600;
+}
+.input {
+	max-width: 190px;
+	background-color: #f0f0f0;
+	color: #303030;
+	padding: .15rem .5rem;
+	min-height: 40px;
+	border-radius: 0.5rem;
+	outline: none;
+	border: none;
+	line-height: 1.15;
+	box-shadow: 0px 10px 15px -18px;
+	margin-top: 30px;
+	margin-left: 1000px;
+	font-family:  'DM Sans', sans-serif;
+  }
+  
+  input:focus {
+	border-bottom: 2px solid #113e21;
+	border-radius: 4px 4px 2px 2px;
+  }
+  
+  input:hover {
+	outline: 1px solid lightgrey;
+  }

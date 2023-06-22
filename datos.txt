@@ -1,0 +1,2 @@
+POINT (-72.2497489 -40.3655544),Cam 3,Huemul: 2
+Gato ColoColo: 1, Rana: 1
