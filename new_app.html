@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ING2030 - G65</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body id="cuerpo">
+        <inicio class="titulos">
+            <div id="titulo">EcoValuate</div>
+            <p id="bajada">AI-powered Wildlife Monitoring & EcoSystem Valuation</p>
+            <hr style="height: 0.5px;width:100%;text-align:center;margin-bottom:3%; color:rgb(57, 152, 152);background-color:rgb(57, 152, 152) ">
+        </inicio>
+        <content class="info">
+            <columna>
+                <div id="texto">
+                    <p id="saludo">¡Bienvenid@ a EcoValuate!</p>
+                    <p>Somos un proyecto que busca resolver el problema de la valorización económica de Ecosistemas
+                    a través del monitoreo de la fauna silvestre que habita el territorio.
+                    </p><p>Nuestra IA es capaz de reconocer diferentes especies animales dentro del área delimitada a partir de fotos obtenidas de una red
+                    de cámaras trampa. Desde el análisis de esos datos podemos estimar las poblaciones de las diversas especies y con ello calcular 
+                    el valor estimado del ecosistema según su biodiversidad.</p>
+                    <p>En el mapa de la derecha está destacada el área de monitoreo, puedes hacer click en los marcadores para ver la información recolectada
+                    por cada cámara en la zona.
+                    La valorización del ecosistema está aquí abajo.</p>
+            
+                </div>
+                
+                <button class="button-17" role="button"> <a id="resp"> Valor Total Ecosistema (UTM): <b id="value"></b> </a></button>
+            </columna> 
+            <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1TALN2YB0Ehn--0H_mkgGigzAmjW5I_E&ehbc=2E312F"></iframe>
+        </content>
+    </body>
+    <script src="script.js"></script>
+	<script>
+	    var valor = 155
+		window.onload = function() {
+		  //when the document is finished loading, replace everything
+		  //between the <a ...> </a> tags with the value of "valor"
+		document.getElementById("value").innerHTML=valor;
+		}
+	</script>
+</html>
